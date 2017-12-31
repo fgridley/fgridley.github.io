@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
+  font-family: 'Raleway', Georgia, sans-serif;
   color: #2a7ae2;
   text-decoration: none; }
   a:visited {
