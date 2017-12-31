@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: "Times New Roman", serif;
+  font-family: 'Raleway', Helvetica, sans-serif;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
+  font-family: 'Raleway', Helvetica, sans-serif;
   margin-bottom: 15px; }
 
 /**
@@ -66,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  font-family: "Times New Roman", serif;
+  font-family: 'Raleway', Helvetica, sans-serif;
   color: #2a7ae2;
   text-decoration: none; }
   a:visited {
