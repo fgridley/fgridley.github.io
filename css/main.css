@@ -10,13 +10,12 @@ dl, dd, ol, ul, figure {
 
 body {
   font-family: "Raleway", sans-seif;
-  padding: 30px;
 }
 
 header {
   font-family: "Raleway", sans-serif;
-  padding: 30px;
   text-align: left;
+  padding: 40px;
 }
 
 footer {
@@ -28,7 +27,7 @@ footer {
 .title {
   color: black;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 30px;
   width: 100%;
 }
 
