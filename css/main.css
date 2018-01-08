@@ -9,7 +9,7 @@ dl, dd, ol, ul, figure {
 }
 
 body {
-  font-family: "Raleway", sans-seif;
+  font-family: "Raleway", sans-serif;
 }
 
 header {
@@ -31,6 +31,11 @@ footer {
   width: 100%;
 }
 
+.title:hover {
+  color: #1792ea;
+  transition-duration: 0.4s;
+}
+
 .nav-link {
   color: black;
   font-size: 15px;
@@ -39,4 +44,14 @@ footer {
   padding-top: 12px;
   padding-bottom: 20px;
   text-transform: uppercase;
+  transition-duration: 0.2s;
+}
+
+.nav-link:hover {
+  color: #1792ea;
+  transition-duration: 0.4s;
+}
+
+.icon a {
+  display: inline-block;
 }
