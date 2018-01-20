@@ -62,7 +62,17 @@ header p {
   color: black;
 }
 
+.pagebox {
+  text-decoration: none;
+}
+
 .pagebox img {
   width: 300px;
   height: 300px;
+  padding: 20px;
+  display: inline-block;
+}
+
+img:hover {
+ opacity: .6;
 }
