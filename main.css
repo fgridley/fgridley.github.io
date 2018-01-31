@@ -190,26 +190,26 @@ p {
 	.title .link {
 		display: inline block;
 	}
-	
+
 	.title {
 		float: left;
-		line-height: 1.25;
+		line-height: 2;
 	}
-	
+
 	.link {
 		float: right;
 		line-height: 1;
 		padding-top: 25px;
 	}
-	
+
 	ul {
 		padding-right: 20px;
 	}
-	
+
 	nav {
 		height: 100px;
 	}
-	
+
 	h2 {
 		padding-top: 150px;
 		margin-bottom: 50px;
@@ -217,21 +217,18 @@ p {
 	h2:before {
 		width: 600px;
 	}
-	
+
 	.col-md-half {
 		width: 50%;
 		display: block;
 	}
-	
+
 	.about-text {
 		padding-top: 170px;
 		float: left;
 	}
-	
+
 	.portfolio-top-img {
 		padding-top: 150px;
 	}
 }
-
-
-
