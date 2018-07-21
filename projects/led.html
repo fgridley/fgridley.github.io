@@ -33,7 +33,26 @@
 					<div>
 						<h3><mark>LED Music Analysis</mark></h3>
 						<h4>Arduino / Processing</h4>
-						<p>Oops! this page is under construction :/</p>
+						<p>This project began as an idea in the back of my head months ago.
+						I knew I wanted to find a way of controlling a strip of LED lights
+						and making them change along to music, but I struggled to find a
+						simple way of doing it. Earlier this summer, I took Programming
+						Basics, in which we learned Processing. It was then that I
+						discovered that Processing works well with Arduino, and has a couple
+						different libraries for analyzing music.
+						<br/>
+						I originally created a simple program which drew shapes along with the music, and once I
+					 	felt confident using Processing to analyze music, I began learning
+						how to communicate between a Processing project and the Arduino
+						through the serial port. In my final solution, the Processing
+						programming analyzes the amplitude of the computer's audio output,
+						using a Fast Fourier Transform and converts that to a value between
+						0 and 255, and then sends it to the Arduino which uses it as the
+						brightness for the strip of LED lights. The Arduino program also
+						cycles through the hues to make the lights change color. I plan on
+						continuing to improve upon this project, and I would ideally like
+						to find a way to make the Arduino communicate with the computer
+						wirelessly, as well as a few other minor improvements.</p>
 					</div>
 				</main>
 			</main>
