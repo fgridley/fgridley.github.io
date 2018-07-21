@@ -8,6 +8,8 @@ body {
 header {
   display: flex;
   flex-flow: column wrap;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 header nav {
   display: flex;
@@ -25,7 +27,12 @@ header a:hover {
   color: #f76c6c;
 }
 
-.intro mark {
+.intro h3 {
+  text-align: center;
+  color: #5f6060;
+}
+
+mark {
   display: inline-block;
   line-height: 0em;
   padding-bottom: 0.5em;
@@ -33,7 +40,7 @@ header a:hover {
   color: #5f6060;
 }
 
-main {
+.project-container {
   display: grid;
   grid-template-columns: 10% 1fr 10%;
   padding-top: 50px;
@@ -99,42 +106,145 @@ footer p {
 }
 footer i {
   font-size: 24px;
+  color: #5f6060;
 }
 footer a {
   padding-right: 20px;
 }
 
 h1 {
-  font-family: "Playfair Display";
-  font-size: 36pt;
+  font-family: "Roboto";
+  font-size: 25pt;
   justify-content: flex-start;
-  font-weight: bold;
-  color: #24305e;
+  font-weight: 900;
+  color: #374785;
+  letter-spacing: 2pt;
 }
 
 h3 {
-  font-family: "Lato";
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+h4 {
+  font-family: "Roboto";
+  font-weight: 300;
   color: #5f6060;
-  text-align: center;
-  font-style: italic;
+  font-size: 12px;
 }
 
 a {
-  font-family: "Lato";
+  font-family: "Roboto";
+  font-weight: 300;
   font-size: 12pt;
-  color: #5f6060;
+  color: #24305e;
   text-decoration: none;
   padding-right: 20px;
 }
 
 p {
-  font-family: "Lato";
+  font-family: "Roboto";
+  font-weight: 300;
   font-size: 12pt;
   color: #5f6060;
 }
 
 i:hover {
   color: #f76c6c;
+}
+
+.about {
+  display: grid;
+  width: 85%;
+  grid-template-columns: 50% 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about img {
+  margin: auto;
+  width: 90%;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project .slider-container {
+  margin-right: 20px;
+  vertical-align: middle;
+  max-width: 500px;
+  height: 500px;
+  position: relative;
+}
+.project img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  vertical-align: middle;
+  width: 100%;
+  display: none;
+  height: auto;
+}
+.project video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+.project h3 {
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+.project h4 {
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+.project p {
+  font-weight: 300;
+}
+.project button {
+  background-color: #5f6060;
+  opacity: 0.7;
+  border: none;
+  outline: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+.project .button-left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: left;
+  vertical-align: middle;
+}
+.project .button-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: right;
+  vertical-align: middle;
 }
 
 /*tablet*/
@@ -147,7 +257,8 @@ i:hover {
     flex-flow: row wrap;
   }
   header h1 {
-    margin-left: 50px;
+    margin-left: 70px;
+    text-transform: uppercase;
   }
   header nav {
     display: flex;

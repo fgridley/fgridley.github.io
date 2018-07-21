@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="Fiona Gridley's Portfolio" description="Web portfolio for Fiona Gridley.">
-		<link rel="stylesheet" type="text/css" href="../main.css">
-		<link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display:400,700" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-		<title>Fiona Gridley</title>
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="Fiona Gridley's Portfolio" description="Web portfolio for Fiona Gridley.">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<title>Fiona Gridley</title>
+</head>
 
 	<body>
 		  <!--Page header-->
@@ -20,8 +20,23 @@
 				</nav>
 			</header>
 
-			<!--Main content: project grid-->
-			<main>
+			<!--Main content-->
+			<main class="project">
+				<div class="slider-container">
+					<!--PUT PICTURES HERE-->
+					<!--<img class="image-slider" src="../_assets/aerowhon-mockup.png" alt="Aerowhon mockup">
+					<img class="image-slider" src="../_assets/aerowhon logo.png" alt="Aerowhon logo">
+					<img class="image-slider" src="../_assets/aerowhon business card.png" alt="Aerowhon Business Card">-->
+					<button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+  				<button class="button-right" onclick="plusDivs(1)">&#10095;</button>
+				</div>
+				<script src="../image-slider.js"></script>
+				<div>
+					<h3><mark>String Exchange</mark></h3>
+					<h4>Logo / Brand design</h4>
+					<p>ENTER TEXT HERE</p>
+					<p>AND HERE</p>
+				</div>
 			</main>
 
 			<!--Page footer-->
