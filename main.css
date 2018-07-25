@@ -191,6 +191,10 @@ i:hover {
   display: none;
   height: auto;
 }
+.project img .tall-img {
+  height: 100%;
+  width: auto;
+}
 .project video {
   position: absolute;
   top: 0;
@@ -245,6 +249,10 @@ i:hover {
   margin-bottom: auto;
   float: right;
   vertical-align: middle;
+}
+.project .tall-img {
+  height: 100%;
+  width: auto;
 }
 
 /*tablet*/
