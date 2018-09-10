@@ -1,0 +1,95 @@
+/*variables*/
+$watermelon: #f76c6c
+$title-blue: #24305e
+$sky-blue: #a8d0e6
+$daffodil: #f8e9a1
+$stone: #5f6060
+$invisible: #e2e2e2
+$ocean: #374785
+
+body
+  border-left: 20px solid $watermelon
+  margin: 0
+  padding: 0
+
+header
+  display: flex
+  flex-flow: column wrap
+  padding-top: 30px
+  nav
+    display: flex
+    flex-flow: column wrap
+    margin-left: auto
+    margin-right: auto
+    align-items: center
+    padding-right: 30px
+  h1
+    margin-left: auto
+    margin-right: auto
+  a:hover
+    color: $watermelon
+
+h1
+  font-family: 'Roboto'
+  font-size: 25pt
+  justify-content: flex-start
+  font-weight: 900
+  color: $ocean
+  letter-spacing: 2pt
+  text-transform: uppercase
+h2 
+    font-family: 'Roboto'
+    font-size: 20pt
+    font-weight: 300
+    margin-top: 0.83em
+    margin-bottom: 3px
+h3
+  font-family: 'Roboto'
+  font-weight: 300
+h4
+  font-family: 'Roboto'
+  font-weight: 300
+  font-size: 14px
+
+a
+  font-family: 'Roboto'
+  font-weight: 300
+  font-size: 12pt
+  color: $title-blue
+  text-decoration: none
+  padding-right: 20px
+p
+  font-family: 'Roboto'
+  font-weight: 300
+  font-size: 10pt
+img 
+    width: 60%
+    height: auto
+i:hover
+  color: $watermelon
+main
+    width: 90%
+    margin: auto
+.email
+    margin-top: 3px
+    font-size: 14px
+.assignment
+    background: lighten($daffodil, 10%)
+    padding: 20px 50px
+    margin: 10px
+
+/*tablet*/
+@media (min-width: 768px)
+  header
+    flex-flow: row wrap
+    h1
+      margin-left: 70px
+      text-transform: uppercase
+    nav
+      display: flex
+      flex-flow: row wrap
+      margin-right: 50px
+      align-items: center
+      padding-right: 30px
+    a:hover
+      color: $watermelon
