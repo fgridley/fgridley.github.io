@@ -4,7 +4,6 @@
 		<meta charset="UTF-8">
 		<meta name="IS 4300" description="IS 4300 personal web page for projects and">
 		<link rel="stylesheet" type="text/css" href="IS4300.css">
-		<link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display:400,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 		<title>Fiona Gridley</title>
 	</head>
@@ -21,43 +20,69 @@
 
 			<!--Main content-->
 			<main class="IS 4300">
-                <h2> IS 4300: Homework</h3>
+                <h2> IS 4300: Homework</h2>
                 <p class="email">Email: gridley.f@husky.neu.edu</p>
-                
-                <div class="assignment">
-                    <h3>Homework 1: Project Brainstorming</h5>
-                    <div class="assignment-section">
-                        <h4>1. Roommate Chores</h6>
-                        <img src="roommate-chores.jpg" alt="Roommate chores paper sketch">
-                        <p>This app is designed to make it easier for roommates to organize and assign chores. One common problem when sharing an apartment with
-                            others is that it is not clear who is supposed to do what chores when, so chores often go undone. Eeach roommate would have the app,
-                            and at the beginning of each week, all the roommates can set and agree on who is responsible for each chore. Those chores then show 
-                            up on the assigned person's chores list. Roommates can earn points by completing chores, and the earlier they complete the chores the
-                            more points they receive. This encourages roommates to actually do the chores once they are assigned. Gone are the days of a messy apartment!
-                        </p>
+                <section class="homework7">
+                    <div class="assignment">
+                        <h3>Homework 7: Mafia Party Evaluation</h3>
+                        <ol>
+                            <li>When executing the create/join a room task, there is a minor problem with the flow of screens. After clicking the &ldquo;start game&rdquo; button, the app takes the user to a description of the game, which is very helpful for new players (I&rsquo;ve never played before and was worried I would not understand the game) but then after clicking &ldquo;next&rdquo; it takes you to the same description, just without the &ldquo;you are&rdquo; header. This is a minor issue and probably just a mistake with which page the &ldquo;next&rdquo; button is linked to.</li>
+                            <img src="description 1.png" alt="description first page">
+                            <img src="description 2.png" alt="description second page">
+                            <li>On the screen titled &ldquo;Mafia Party&rdquo; in the join/create room task which lists the game code and players, the game code is in a text box. This text box indicates that the game code should be editable, but when the user tries to edit or delete the text, nothing happens. This is an issue of consistency, because the text boxes on the previous screen are editable, so the same symbol should produce the same effect. Additionally, it seems strange that the game code would be editable after the user creates the game. If that is the intent, then the field should be editable. If the user should not be able to edit the game code after creating the room (seems like that might cause complications for the backend and room configuration??), then the field should show as plain text like the names, not within a text box.</li>
+                            <img src="game code.png" alt="join game screen">
+                            <li>For the first screen on task two, the text &ldquo;town hall ballot&rdquo; is not necessarily enough for a new player like me to figure out what I should be doing. The only reason I was able to figure out what the point of the town hall was the fact that the task said to choose who I think the mafia is. I&rsquo;m assuming for the final product there will be a better description to replace the lorem ipsum text, but if that is just about the storyline, then there should probably be a short line above the radio buttons saying, for example, &ldquo;choose who you think is in the mafia&rdquo; just so it is clear to the user what they are picking. Great job using radio buttons so it is clear the user can only choose one person.</li>
+                            <img src="town hall.png" alt="town hall page">
+                            <li>The mafia voting screen for task three is a better example for the above problem. The instructions above the radio buttons to &ldquo;choose your victim&rdquo; is very clear what the purpose of the vote is for. Again, the radio buttons make it clear the mafia can only choose one victim each round which is great for players who are unfamiliar with the rules of mafia.</li>
+                            <img src="Mafia vote.png" alt="mafia vote screen">
+                            <li>In the description of the game in the first task, it states that the mafia have one minute to decide who to kill, but the mafia voting screen has no time limit. If you intent on implementing a time limit, there should probably be some sort of highly visible timer on this screen, and then when the timer ends, it will automatically redirect the user to the result page. Otherwise, if there is no timer or if when the timer runs out nothing happens then there will be no motivation for the user to choose in a timely manner, which could cause problems for the other players who want to move on with the game.</li>
+                            <li>For the third task when the users are instructed to close their eyes, there is no way they will know to open their eyes when it is time to wake up. There needs to be some sort of sound to indicate to the user that it is time to wake up because visual cues are obviously useless if the user has their eyes closed.</li>
+                            <img src="wake up.png" alt="wake up screen">
+                            <li>Overall, the UI is very clean and consistent. Nothing to distract the user and it is usually clear exactly what the user is able to do and what the user should do. Because this is a companion app to a physical game, it is important the digital game does not take over and become more important than the physical game itself and the users interacting in real life. I think your group has done a very effective job at this by only adding the absolutely necessary components and not adding too many distracting bells and whistles that might distract the users and cause them to focus too much on their phones.</li>
+                            <li>Great job with responsiveness! I imagine most users will be viewing the game on their phones (laptops seem a little to clunky for this use case) so it is very important that the UI works just as well on a variety of screen sizes, especially small phone screens. Resizing works beautifully and everything is just as readable/visible on my phone as it is on my laptop.</li>
+                            <img src="responsive desktop.png" alt="desktop mainn screen">
+                            <img class="phone-screen" src="responsive phone.png" alt="phone main screen">
+                            <li>The app seems to follow the storyline (or at least what I understand to be the storyline from the little I know about Mafia) effectively as well. Each task follows through the necessary steps in the story. The only issue is probably just one of what was possible for this iteration of the prototype. Having the app separated into different tasks made it easy for me to know what I am supposed to be testing for, but I would have also liked to be able to go through the whole game (not separated by task) to see how the game flows as a whole and get a better idea as to how the three tasks interact to form the whole game. I understand there were pretty tight time constraints for this version of the prototype so I understand why it is the way it is, but I am excited to see the final product!</li>
+                        </ol>
+                        <p >Overall, awesome project! I had a lot of fun getting to explore your project and I think it is a really great solution for what I assume is a pretty big issue for mafia games (one person has to be the observant 3rd party and does not get to play?). Excited to see how the project develops!</p>
                     </div>
-                    <div class="assignment-section">
-                        <h4>2. Campus Event Sharing</h6>
-                        <img src="campus-events.jpg" alt="Campus events paper sketch">
-                        <p>There are dozens of events happening on campus every week, but finding out about these events often requires a student to coincidentally
-                            see a sign posted somewhere on campus. This leaves students feeling like there aren't enough events happening, and causes a lack of
-                            attendance at many events. This app would provide a complete list of all events happening on campus, giving events more visibility for 
-                            a wider range of students. Students will no longer have to browse through many different social media platforms and websites to try to
-                            find events to go to, as they will be able to view and sign up for/buy tickets to all the events available to them.
-                        </p>
+                </section>
+                <section class="homework1">
+                    <div class="assignment">
+                        <h3>Homework 1: Project Brainstorming</h5>
+                        <div class="assignment-section">
+                            <h4>1. Roommate Chores</h6>
+                            <img src="roommate-chores.jpg" alt="Roommate chores paper sketch">
+                            <p>This app is designed to make it easier for roommates to organize and assign chores. One common problem when sharing an apartment with
+                                others is that it is not clear who is supposed to do what chores when, so chores often go undone. Eeach roommate would have the app,
+                                and at the beginning of each week, all the roommates can set and agree on who is responsible for each chore. Those chores then show 
+                                up on the assigned person's chores list. Roommates can earn points by completing chores, and the earlier they complete the chores the
+                                more points they receive. This encourages roommates to actually do the chores once they are assigned. Gone are the days of a messy apartment!
+                            </p>
+                        </div>
+                        <div class="assignment-section">
+                            <h4>2. Campus Event Sharing</h6>
+                            <img src="campus-events.jpg" alt="Campus events paper sketch">
+                            <p>There are dozens of events happening on campus every week, but finding out about these events often requires a student to coincidentally
+                                see a sign posted somewhere on campus. This leaves students feeling like there aren't enough events happening, and causes a lack of
+                                attendance at many events. This app would provide a complete list of all events happening on campus, giving events more visibility for 
+                                a wider range of students. Students will no longer have to browse through many different social media platforms and websites to try to
+                                find events to go to, as they will be able to view and sign up for/buy tickets to all the events available to them.
+                            </p>
+                        </div>
+                        <div class="assignment-section">
+                            <h4>2. Task/Event Management</h6>
+                            <img src="task-manager.jpg" alt="Task/event paper sketch">
+                            <p>As a college student, I have many tasks and events happening all the time, and I like to stay organized so I know what I need to be
+                                working on or where I need to be. There are many calendar apps out there, but I have not found one that makes it easy to manage both 
+                                tasks/assignments as well as events. I want to be able to add a task or assignment to my list of things to do and have it automatically
+                                show up in the calednar, so I can see both the events that are happening on a certain day as well as any tasks or assignments that are
+                                due that day. Instead of having a separate task/list app and calendar app, this would combine the two, making time management simpler 
+                                and more effective.
+                            </p>
+                        </div>
                     </div>
-                    <div class="assignment-section">
-                        <h4>2. Task/Event Management</h6>
-                        <img src="task-manager.jpg" alt="Task/event paper sketch">
-                        <p>As a college student, I have many tasks and events happening all the time, and I like to stay organized so I know what I need to be
-                            working on or where I need to be. There are many calendar apps out there, but I have not found one that makes it easy to manage both 
-                            tasks/assignments as well as events. I want to be able to add a task or assignment to my list of things to do and have it automatically
-                            show up in the calednar, so I can see both the events that are happening on a certain day as well as any tasks or assignments that are
-                            due that day. Instead of having a separate task/list app and calendar app, this would combine the two, making time management simpler 
-                            and more effective.
-                        </p>
-                    </div>
-                </div>
+                </section>
 			</main>
 	</body>
 </html>
